@@ -1,0 +1,16 @@
+{
+  "name": "sveltekit-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:www": "pnpm --filter=\"www\" dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@antfu/eslint-config": "^2.6.4",
+    "deepmerge": "^4.3.1"
+  }
+}

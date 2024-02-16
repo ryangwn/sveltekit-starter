@@ -1,0 +1,1 @@
+export { ignoresBase } from './ignores';

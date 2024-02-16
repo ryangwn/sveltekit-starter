@@ -1,0 +1,8 @@
+{
+  "name": "ui",
+  "sideEffects": false,
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "main": "./src/index.js"
+}

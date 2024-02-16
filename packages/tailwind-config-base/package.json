@@ -1,0 +1,13 @@
+{
+  "name": "tailwind-config-base",
+  "sideEffects": false,
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "devDependencies": {
+    "@savvywombat/tailwindcss-grid-areas": "^4.0.0",
+    "tailwind-scrollbar": "^3.1.0",
+    "tailwindcss": "^3.4.1"
+  }
+}
