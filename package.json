@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "analyze:www": "pnpm --filter=\"www\" analyze",
     "dev:www": "pnpm --filter=\"www\" dev"
   },
   "keywords": [],
@@ -11,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@antfu/eslint-config": "^2.6.4",
+    "cross-env": "^7.0.3",
     "deepmerge": "^4.3.1"
   }
 }
