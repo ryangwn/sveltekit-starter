@@ -1,25 +1,27 @@
-interface ICreateTimer {
-  // observables
-  secondsPassed: number
-  // computed
-  double: number
-  // actions
-  increase: () => void
-  reset: () => void
+type CreateTimerProps = {
+
 }
 
-export class createTimer implements ICreateTimer {
+export function createTimer(props: CreateTimerProps) {
   // Define state and make it observable
-  secondsPassed = $state(0);
+  let secondsPassed = $state(0);
   // Computed
-  double = $derived(this.secondsPassed * 2); // All derived values should be pure. Do not recommend to change state.
+  let double = $derived(secondsPassed * 2); // All derived values should be pure. Do not recommend to change state.
 
-  // Updating state using actions
-  increase() {
-    this.secondsPassed += 1
-  }
+  return {
+    refs: {},
+    states: {
+      secondsPassed,
+      double
+    },
+    methods: {
+      increase() {
+        secondsPassed += 1
+      },
 
-  reset() {
-    this.secondsPassed = 0
+      reset() {
+        secondsPassed = 0
+      }
+    }
   }
 }
